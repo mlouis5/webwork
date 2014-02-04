@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* CSS Document */
+
+.navHead{
+	position: relative;
+}
+
+.navigation{
+	position: relative;
+	margin:20px auto;
+}
+.navContainer {
+    position:absolute;
+    overflow:hidden;
+	background-color: white;
+    width:100%;
+    height:120px;
+}
+
+.navContainer > h3{
+	position:absolute;
+	left: 0px;
+	top: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	height: 120px;
+	width: 100%;
+	text-align: center;
+	font-size:95px;
+	letter-spacing:10px;
+	
+	background: #d0e4f7; /* Old browsers */
+	background: -moz-linear-gradient(top, #d0e4f7 0%, #73b1e7 24%, #0a77d5 50%, #539fe1 79%, #87bcea 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d0e4f7), color-stop(24%,#73b1e7), color-stop(50%,#0a77d5), color-stop(79%,#539fe1), color-stop(100%,#87bcea)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=0 ); /* IE6-9 */
+}
+
+.clearNav{
+	position: absolute;
+	overflow: hidden;
+	background-color: white;
+	width: 38px;
+	height: 120px;
+	z-index: 10;
+	left: 96.9%;
+	top: 15px;
+	
+	-webkit-transition-duration:.75s;
+    -moz-transition-duration:.75s;
+    -o-transition-duration:.75s;
+}
+
+.clearNav form {
+	display:none;
+	width: 1715px; /*100%;*/
+}
+
+.clearNav #tip {
+	float: left;
+	width: 38px;
+	height: 118px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	background:url(../images/addPay.png);
+	background-color: white;	
+}
+
+.clearNav:hover {
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	width: 1715px; /*98.2%;*/
+	
+	/* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top left, #000000 0%, #001721 100%);
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top left, #000000 0%, #001721 100%);
+	/* Opera */ 
+	background-image: -o-linear-gradient(top left, #000000 0%, #001721 100%);
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #000000), color-stop(1, #001721));
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top left, #000000 0%, #001721 100%);
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom right, #000000 0%, #001721 100%);
+
+	-webkit-transition-duration:.75s;
+    -moz-transition-duration:.75s;
+    -o-transition-duration:.75s;
+}
+
+.clearNav:hover form {
+	width: 1715px; /*100%;*/
+	display:inline-block;
+	-webkit-transition-duration:.75s;
+    -moz-transition-duration:.75s;
+    -o-transition-duration:.75s;
+}
+
+.clearNav:hover #tip {
+	display:none;	
+}
+
+/*
+########################################################################
+########################################################################
+########################################################################
+########################################################################
+########################################################################
+########################################################################
+########################################################################
+*/
+
+#searchContainer {
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	width: 1715px; /*98%;*/
+	height: 120px;
+	display: block;
+	background-color: white;
+}
+
+#searchForm {
+	height: 120px;
+	/* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
+
+	/* IE10 Consumer Preview */ 
+	/* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top left, #000000 0%, #001721 100%);
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top left, #000000 0%, #001721 100%);
+	/* Opera */ 
+	background-image: -o-linear-gradient(top left, #000000 0%, #001721 100%);
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #000000), color-stop(1, #001721));
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top left, #000000 0%, #001721 100%);
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom right, #000000 0%, #001721 100%);  
+  
+    color: #000;  
+    font-size: 0.750em;  
+    text-shadow: 1px 1px 0px rgba(255,255,255,.5);  
+  
+    -webkit-box-shadow:  0px 1px 3px 0px rgba(0, 0, 0, .2);      
+    box-shadow:  0px 1px 3px 0px rgba(0, 0, 0, .2);  
+  
+    position: relative;	
+}

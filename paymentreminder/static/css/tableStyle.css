@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*This table will not have any space in between the cells, so we collapse it:*/
+table.table2{
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: -1px;
+    line-height: 1.2em;
+    border-collapse:collapse;
+    text-align:center;
+	width:100%;
+	height:100%;
+}
+
+/*The footer and the header are going to have a similar style, so we can define the common properties as follows:*/
+.table2 thead th, .table2 tfoot td{
+    padding:20px 10px 40px 10px;
+    color:#fff;
+    font-size: 26px;
+    background-color:#222;
+    font-weight:normal;
+    border-right:1px dotted #666;
+    border-top:3px solid #666;
+    -moz-box-shadow:0px -1px 4px #000;
+    -webkit-box-shadow:0px -1px 4px #000;
+    box-shadow:0px -1px 4px #000;
+    text-shadow:0px 0px 1px #fff;
+    text-shadow:1px 1px 1px #000;
+}
+
+/*The th of the footer will have this style:*/
+.table2 tfoot th{
+    padding:10px;
+    font-size:18px;
+    text-transform:uppercase;
+    color:#888;
+}
+
+/*The footer cells which we already defined together with the header cells, will need a different box shadow. The header box shadow points to the top and the footer one should point to the bottom. We also want to change the color of the text:*/
+.table2 tfoot td{
+    font-size:36px;
+    color:#EF870E;
+    border-top:none;
+    border-bottom:3px solid #666;
+    -moz-box-shadow:0px 1px 4px #000;
+    -webkit-box-shadow:0px 1px 4px #000;
+    box-shadow:0px 1px 4px #000;
+	vertical-align:middle;
+}
+
+/*Let’s get back to the header where we still need to define that the empty cell should not have any style:*/
+.table2 thead th:empty{
+    background:transparent;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}
+
+/*We also need to remove the box shadow that we defined for the header elements before.
+With the :nth-last-child selector we can select the last cell element in our header and say that it should not have a right border, like the other ones:*/
+.table2 thead :nth-last-child(1){
+    border-right:none;
+}
+
+/*With the :first-child selector we can address the first cell in the header, which is empty and we don’t want it to have a border. We also want to remove the border from the last td elements in our table body:*/
+.table2 thead :first-child,
+.table2 tbody :nth-last-child(1){
+    border:none;
+}
+
+/*Now, lets add some style to the outer left descriptions, the th elements of the table body:*/
+.table2 tbody th{
+    text-align:right;
+    padding:10px;
+    color:#333;
+    text-shadow:1px 1px 1px #ccc;
+	background-color:#f0f0f0;
+}
+
+/*And the following style will be applied to the other cells:*/
+.table2 tbody td{
+    padding:10px;
+    background-color:#f0f0f0;
+    border-right:1px dotted #999;
+    text-shadow:-1px 1px 1px #fff;
+    text-transform:uppercase;
+    color:#333;
+}
+
+/*Now we just need to insert an icon for the check spans:*/
+.table2 tbody span.check::before{
+    content : url(../images/check.png);
+}

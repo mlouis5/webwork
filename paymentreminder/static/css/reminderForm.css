@@ -1,0 +1,142 @@
+@charset "utf-8";
+/* CSS Document */
+
+html { 
+   min-height: 100%;
+}
+
+body{
+	margin:0;
+    padding:0;
+	background-color: 444444;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(c4c4c4), to(444444), color-stop(.5,then here));
+	background: -moz-linear-gradient(top, c4c4c4 0%, then here 50%, 444444 100%);
+	overflow:hidden;
+}
+
+.jelly-form{
+  position: relative;
+  width: 200px;
+  display:inline-block;
+}
+.jelly-form input, select{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 4px solid #ffffff;
+  color: #afafaf;
+  
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  
+  font-size: 1.4em;
+  padding: 0.6em 0.6em;
+  width: 200px;
+  
+  background: -moz-linear-gradient(
+		top,
+		#f7ff00 0%,
+		#ffbf00);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#f7ff00),
+		to(#ffbf00));
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+.jelly-form:before, .jelly-form:after{
+  content:'';
+  display: block;
+  
+  position: absolute;
+  bottom: 2px;
+  
+  height: 6px;
+  border-left: 4px solid #ffffff;
+}
+.jelly-form:before{
+  left: 0;
+}
+.jelly-form:after{
+  right: 0;
+}
+.jelly-form input[type="date"]{
+	padding: 0.85em 0.6em;
+	margin-top:-6px;
+}
+input:focus {
+	border-bottom: 4px solid #ffbf00;
+}
+select:focus{
+	border-bottom: 4px solid #ffbf00;
+}
+
+
+.fieldSet{
+	color: white;
+	float: left;
+	padding:10px;
+	border:none;
+	display: block;
+    margin: 0 auto;
+    text-align: center;
+	*display:inline;/* ie6/7 hack for inline block */
+	zoom:1.0;/* ie6/7 hack for inline block */
+	vertical-align: middle;
+	width:95%;
+}
+
+.button_white{
+	/*GENERATED FROM http://css3button.net/  */
+  font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #050505;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#f7ff00 0%,
+		#ffbf00);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#f7ff00),
+		to(#ffbf00));
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 5px solid #fffcff;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.7);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.7);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.7);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.4),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+.button_white:hover {
+	cursor:pointer;
+  	background: -moz-linear-gradient(
+		top,
+		#ffbf00 0%,
+		#f7ff00);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ffbf00),
+		to(#f7ff00));
+}
+.button_white:focus{
+	outline: none;
+    border: 5px solid #cccfcc;
+    box-shadow: 0 0 10px #cccfcc;
+}
+
+#reminderButton{
+	float:left;	
+	margin-left: 45px;
+}

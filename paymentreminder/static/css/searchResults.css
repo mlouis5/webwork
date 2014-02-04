@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import "../js/DataTables-1.9.4/media/css/demo_table.css";
+
+#viewSection{
+	/*border: 2px solid red;*/
+	position:absolute;
+	left:15px;
+	top: 135px;
+	margin-top: 20px;
+	margin-right: 50px;
+	width: 96.5%;
+	height: 660px;
+	padding: 15px;
+	overflow: hidden;
+	
+	background-color:#f0f0f0;
+}
+
+
+#searchResults{
+	text-align:center;
+	border: 2px solid white;
+	/*color: white;*/
+	position:relative;
+	padding: 15px;
+	width: 100%;		
+}
+
+#searchResults td{
+	text-align:center;		
+}
+
+#confButton{
+	width:100px;;	
+}
+
